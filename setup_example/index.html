@@ -1,0 +1,115 @@
+<!-- Here you have declared a Doctype for HTML5 so the browser knows which type of HTML to process -->
+<!DOCTYPE html>
+<!-- Next you open and close your HTML tags so the browser knows to render HTML between them -->
+<html>
+<!-- First you open/close your The 'Head' of your document. -->
+<head>
+<!--
+This is where meta data (info about your site/page) is kept and communicates with servers.
+No one see's anything you do in here, its just info and not for the world to see.
+-->
+
+<!--
+UTF tells the operating system/browser what style of characters you want.
+Always use this until you are advanced enough to change it.
+This will prevent funny characters when you put and &, !, ', or other symbols.
+-->
+	<meta charset="UTF-8">
+<!-- Here is a description of what your page is about -->
+	<meta name="description" content="Free Web tutorials">
+<!-- These are wher you place key words for indexing. Mostly its a myth, but go for it! -->
+	<meta name="keywords" content="website, webapp, app, web, site, website.com, home, free, tutorial">
+<!-- Here you place the author of a page of blog article if you page is a blog post for exmaple. -->
+	<meta name="author" content="Hege Refsnes">
+<!-- This tells search robots to index and follow this page. -->
+	<meta name="robots" content="index, follow">
+
+<!-- This is where the title of the page goes, you can see in it the browser tab -->
+	<title>HOME | Website.com</title>
+
+	<!-- Next you link any files that you may need for this site in respect to styles, fonts and sometimes libraries. -->
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- CSS FILES -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<!-- 
+The world only see's what happens in here, inside the belly of the body.
+Here is where you place all the html tags tha you want to style and show the world.
+-->
+
+<!--
+The following is a container. In this exaple it is used with Header and Footer inside.
+However you can have the container between them as well.
+-->
+<div class="container">
+		<!-- Here is the header where you place your logo & nav -->
+	<header>
+	<!-- LOGO -->
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/logoStark.png">
+			</a>
+		</div>
+		<!-- NAVIGATION -->
+		<nav class="top">
+			<ul>
+				<a href="about.html">
+					<li>About</li>
+				</a>
+				<a href="press.html">
+					<li>Press</li>
+				</a>
+				<a href="portfolio.html">
+					<li>Portfolio</li>
+				</a>
+				<a href="contact.html">
+					<li>Contact</li>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<div class="belly">
+		<h1>Winter is Coming...</h1>
+		<img src="images/game-of-thrones-poster.jpg">
+	</div>
+	<footer>
+		<small>
+			&copy; <a href="#">Website 2016</a>
+		</small>
+			<!-- NAVIGATION -->
+		<nav class="bottom">
+			<ul>
+				<a href="about.html">
+					<li>About</li>
+				</a>
+				<a href="press.html">
+					<li>Press</li>
+				</a>
+				<a href="portfolio.html">
+					<li>Portfolio</li>
+				</a>
+				<a href="contact.html">
+					<li>Contact</li>
+				</a>
+			</ul>
+		</nav>
+	</footer>
+	
+</div>
+
+<!--
+** Here at the absolute bottom of your body, you place all Javascript files.
+- They are placed ob the bottom rather than the top so ypur page loads faster.
+- The stcak order of javascript file will depend on what your objective is, but most of the time any libaries come first then your own scripts.
+-->
+
+<!-- JQUERY LIBRARY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Your own javascript file -->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
